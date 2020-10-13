@@ -6,13 +6,14 @@ void setup()
 
 void loop() 
 {
-   int voltaje, temp=0;
-   delay(400);
+   float voltaje; 
+   int temp=0;
+   delay(600);
    voltaje=analogRead(A0);
    Serial.println(voltaje);
    temp = (voltaje*57)/1023;
    Serial.print("La temperatura es de: ");
    Serial.println(temp);
-   Serial.print(" °C");
+   Serial.print(" Celsius\n");
    
 }
